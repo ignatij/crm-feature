@@ -1,8 +1,15 @@
 {
   "name": "crm-feature",
   "packageManager": "yarn@4.0.2",
+  "private": "true",
   "workspaces": [
     "app",
     "ui"
-  ]
+  ],
+  "scripts": {
+    "app:start": "yarn workspace app run start",
+    "ui:build": "yarn workspace ui run build",
+    "ui:start": "yarn workspace ui run build && yarn workspace ui run preview",
+    "start-local-db": "cd app && docker-compose up -d"
+  }
 }
