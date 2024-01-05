@@ -1,0 +1,8 @@
+{
+  "name": "crm-feature",
+  "packageManager": "yarn@4.0.2",
+  "workspaces": [
+    "app",
+    "ui"
+  ]
+}
